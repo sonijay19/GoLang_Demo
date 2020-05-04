@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Helth Card</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/health.png" rel="icon">
+  <link href="img/health.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" 
+  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header1">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a  class="scrollto">Health Card</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="menu-has-children"><a href="">Register</a>
+            <ul>
+              <li><a href="#" data-toggle="modal" data-target="#RegisterModal">DOCTOR</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#RegisterModal1">PATIENT</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#RegisterModal2">CHEMIST</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#RegisterModal3">LABORATORY</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children"><a href="">Log in</a>
+            <ul>
+              <li><a href="#" data-toggle="modal" data-target="#LoginModal">DOCTOR</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#LoginModal1">CHEMIST</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#LoginModal2">LABORATORY</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      Doctor Register
+    ============================-->
+    <div class="modal fade" id="RegisterModal" tabindex="-1" 
+      role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="myModalLabel" id="mar"></h4>
+            <h4 class="modal-title"  id="marr">Register</h4>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <span class="input-group-addon"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                <input type="text" name="drName"class="form-control" required />
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon">&nbsp;&nbsp;Mob No&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="drmobNo"class="form-control" pattern="[0-9]{10}" required/>
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon" style="text-indent: 5px;"> &nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                <input type="email" name="drEmail" class="form-control"  required/>
+              </div>
+              <p>
+              </p>
+              </p>  
+              <div class="input-group">
+                <span class="input-group-addon">License No</span>
+                <input type="text" name="drLicense" class="form-control"  required/>
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon" style="text-indent: 20px;">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="drCity" class="form-control"  required/>
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon">&nbsp;&nbsp;Pincode&nbsp;&nbsp;&nbsp; </span>
+                <input type="text" name="drPincode" class="form-control" pattern="[0-9]{6}" required/>
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon">&nbsp;Password&nbsp;</span>
+                <input type="password" name="drPassword" class="form-control"  required/>
+              </div>
+              <p>
+              </p>
+              <button type="button" class="btn btn-success">
+              Register</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" 
+              class="btn btn-default" data-dismiss="modal">
+              Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--==========================
+      Patient Register
+    ============================-->
+    <div class="modal fade" id="RegisterModal1" tabindex="-1" 
+    role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="myModalLabel" id="mar"></h4>
+            <h4 class="modal-title"  id="marr">Register</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+              <input type="text" name="cName"class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender&nbsp;&nbsp;&nbsp; </span>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input labl" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Other</label>
+              </div>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+              <input type="date" name="cName"class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Mob No&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="cmobNo"class="form-control"  pattern="[0-9]{10}" required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon" style="text-indent: 5px;"> &nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+              <input type="email" name="cEmail" class="form-control"  required/>
+            </div>
+            <p>
+            </p>  
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Address&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="cAddress" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon" style="text-indent: 20px;">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="cCity" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon" style="text-indent: 20px;">state&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="cCity" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Pincode&nbsp;&nbsp;&nbsp; </span>
+              <input type="text" name="cPincode" class="form-control" pattern="[0-9]{6}" required/>
+            </div>
+            <p>
+            </p>
+            <button type="button" class="btn btn-success">
+            Register</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" 
+            class="btn btn-default" data-dismiss="modal">
+            Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <!--==========================
+      Chemist Register
+    ============================-->
+    <div class="modal fade" id="RegisterModal2" tabindex="-1" 
+    role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="myModalLabel" id="mar"></h4>
+            <h4 class="modal-title"  id="marr">Register</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+              <input type="text" name="cName"class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Mob No&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="cmobNo"class="form-control"  pattern="[0-9]{10}" required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon" style="text-indent: 5px;"> &nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+              <input type="email" name="cEmail" class="form-control"  required/>
+            </div>
+            <p>
+            </p>  
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Address&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="cAddress" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon" style="text-indent: 20px;">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="cCity" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Pincode&nbsp;&nbsp;&nbsp; </span>
+              <input type="text" name="cPincode" class="form-control" pattern="[0-9]{6}" required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;Password&nbsp;</span>
+              <input type="password" name="cPassword" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <button type="button" class="btn btn-success">
+            Register</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" 
+            class="btn btn-default" data-dismiss="modal">
+            Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <!--==========================
+      laboratory Register
+    ============================-->
+    <div class="modal fade" id="RegisterModal3" tabindex="-1" 
+    role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="myModalLabel" id="mar"></h4>
+            <h4 class="modal-title"  id="marr">Register</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+              <input type="text" name="lName"class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Mob No&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="lmobNo"class="form-control"  pattern="[0-9]{10}" required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon" style="text-indent: 5px;"> &nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+              <input type="email" name="lEmail" class="form-control"  required/>
+            </div>
+            <p>
+            </p>  
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Address&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="lAddress" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon" style="text-indent: 20px;">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <input type="text" name="lCity" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;&nbsp;Pincode&nbsp;&nbsp;&nbsp; </span>
+              <input type="text" name="lPincode" class="form-control" pattern="[0-9]{6}" required/>
+            </div>
+            <p>
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp;Password&nbsp;</span>
+              <input type="password" name="lPassword" class="form-control"  required/>
+            </div>
+            <p>
+            </p>
+            <button type="button" class="btn btn-success">
+            Register</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" 
+            class="btn btn-default" data-dismiss="modal">
+            Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==========================
+      Doctor Log In
+    ============================-->
+    <div class="modal fade" id="LoginModal" tabindex="-1" 
+      role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="myModalLabel" id="mar"></h4>
+              <h4 class="modal-title"  id="marr">Login</h4>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <span class="input-group-addon"> &nbsp;&nbsp;&nbsp; Email &nbsp;&nbsp; </span>
+                <input type="text" class="form-control"  required/>
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon">Password</span>
+                <input type="text" class="form-control"  required/>
+              </div>
+              <p>
+              </p>  
+              <button type="button" class="btn btn-success">
+              SignIn</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" 
+              class="btn btn-default" data-dismiss="modal">
+              Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+    <!--==========================
+      Chemist Log In
+    ============================-->
+    <div class="modal fade" id="LoginModal1" tabindex="-1" 
+      role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="myModalLabel" id="mar"></h4>
+              <h4 class="modal-title"  id="marr">Login</h4>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <span class="input-group-addon"> &nbsp;&nbsp;&nbsp; Email &nbsp;&nbsp; </span>
+                <input type="text" class="form-control"  required/>
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon">Password</span>
+                <input type="text" class="form-control"  required/>
+              </div>
+              <p>
+              </p>  
+              <button type="button" class="btn btn-success">
+              SignIn</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" 
+              class="btn btn-default" data-dismiss="modal">
+              Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--==========================
+      Laboratory Log In
+    ============================-->
+    <div class="modal fade" id="LoginModal2" tabindex="-1" 
+      role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="myModalLabel" id="mar"></h4>
+              <h4 class="modal-title"  id="marr">Login</h4>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <span class="input-group-addon"> &nbsp;&nbsp;&nbsp; Email &nbsp;&nbsp; </span>
+                <input type="text" class="form-control"  required/>
+              </div>
+              <p>
+              </p>
+              <div class="input-group">
+                <span class="input-group-addon">Password</span>
+                <input type="text" class="form-control"  required/>
+              </div>
+              <p>
+              </p>  
+              <button type="button" class="btn btn-success">
+              SignIn</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" 
+              class="btn btn-default" data-dismiss="modal">
+              Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
